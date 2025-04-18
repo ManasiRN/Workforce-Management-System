@@ -1,50 +1,39 @@
-# Employee-Management-System
+# Workforce Management System
 
-I have made a compact yet feature-rich 🌟 Employee Management System where:
-Admins 👩‍💼👨‍💼 can:
-Create tasks ✍️
-Assign them to users 👥
-Monitor their status 📊 (Completed ✅, Pending ⏳, or Failed ❌).
-Users 🙋‍♂️🙋‍♀️ can:
-View assigned tasks 📋
-Accept ✅ or forward them 🔄
-Update progress by marking tasks as completed ✅ or failed ❌.
-This system ensures streamlined task tracking 🚀 and accountability ✔️.
+A robust and scalable web-based platform designed to optimize task management and enhance employee performance tracking. Built using modern technologies like **React**, **Tailwind CSS**, and **Vite**, this project ensures high performance, seamless user experience, and streamlined operations.
 
-🛠 Skills
-Technologies Used: JavaScript, React, Context API, Tailwind CSS, and Local Storage handling.
-🚀 Run Locally
-## Clone the Project
+## 🚀 Features
 
-git clone https://github.com/ems.git
+- 📋 **Task Management**: Organize, assign, and track tasks across teams with ease.
+- 📈 **Employee Performance Tracking**: Monitor productivity metrics and employee activity.
+- ⚙️ **CI/CD Integration**: Automated testing and deployment pipelines powered by **Jenkins**.
+- 📦 **Containerization with Docker**: Ensures consistent deployments across environments.
+- 💾 **Local Storage Integration**: Enables fast and efficient data handling on the client side.
+- 🎨 **Modern UI**: Clean and responsive design with **Tailwind CSS**.
 
-Navigate to the Project Directory
+## 🛠️ Tech Stack
 
-cd ems
+- **Frontend**: React, Vite, Tailwind CSS
+- **DevOps**: Jenkins, Docker
+- **Storage**: Local Storage (Browser)
+  
+## 📦 Deployment
 
-Install Dependencies
+The app is containerized using Docker and supports CI/CD pipelines for smooth deployment. To get started locally:
 
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/workforce-management-system.git
+cd workforce-management-system
+
+# Install dependencies
 npm install
 
-Start the Development Server
-
+# Run the app
 npm run dev
 
-Create Task Demo
- Demo http://localhost:5173/
+# Build Docker image
+docker build -t workforce-management-system .
 
-
-🌟 Features
-Role-Based Access Control:
-Admin and user roles with distinct privileges.
-
-Task Management:
-Create, assign, and forward tasks.
-Update task status (completed, pending, or failed).
-
-Real-Time Tracking:
-Monitor task progress and apply filters.
-
-🏗 Contributing
-Feel free to fork the repository, create a new branch, and submit a pull request for review.
-
+# Run Docker container
+docker run -p 3000:3000 workforce-management-system
